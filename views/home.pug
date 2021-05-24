@@ -1,0 +1,57 @@
+extends base.pug
+
+block scripts  
+    script(src='/static/index.js')
+block style
+    style
+      include ../static/style.css
+block content
+    nav#navbar.top
+           ul 
+              div#logo 
+                   img(src="/static/logo.png", alt="")
+                   | ADA
+              li #[a(href="/") HOME]
+              li #[a(href="/") ABOUT]
+              li #[a(href="/") SERVICES]
+              li #[a(href="/") CLASS INFO]
+              li #[a(href="/") CONTACT US]
+    section#introsection  
+             div Welcome to Anurag's Dance Academy
+             div.small Eat Sleep Dance Repeat
+    section#mission 
+           h2 OUR MISSION
+           div.card   
+               h3 Dance Perfection
+               div.card-box
+                    div.card-img
+                        img(src="/static/img1.jpg")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+           div.card   
+               h3 Dance The Way You like
+               div.card-box
+                    div.card-img
+                        img(src="/static/img2.png")
+                    div.card-content
+                        p This is the best dance academy of the universe 
+           div.card   
+               h3 Expert Teaching 
+               div.card-box
+                    div.card-img
+                        img(src="/static/img3.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+                  
+    section#sponsersection  
+         h2 OUR SPONSER   
+         div#sponser 
+               img(src="/static/a5.png", alt="sponser image" , class="spimage" )
+               img(src="/static/a6.png", alt="sponser image" , class="spimage")
+               img(src="/static/a9.png", alt="sponser image", class="spimage")
+               img(src="/static/a8.png", alt="sponser image" , class="spimage")
+
+
+
+
